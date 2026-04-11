@@ -138,3 +138,10 @@ footer a {
 footer a:hover {
   opacity: 0.8;
 }
+
+@media (max-width: 767px) {
+  #players {
+    grid-template-columns: 1fr;
+    margin: 32px 16px;
+  }
+}
