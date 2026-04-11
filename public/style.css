@@ -1,0 +1,140 @@
+:root {
+  --orange: #f6c7a6;
+  --green:  #bfe3c0;
+  --blue:   #b9d8f2;
+
+  --bg:     #181818;
+  --card:   #222;
+  --shadow: rgba(0, 0, 0, 0.25);
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background:
+    radial-gradient(circle at top, #222 0%, var(--bg) 60%);
+  color: #f0f0f0;
+  text-align: center;
+}
+
+h1 {
+  margin: 28px 0 12px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  opacity: 0.9;
+}
+
+#players {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  margin: 40px 24px;
+}
+
+.player {
+  background: linear-gradient(
+    180deg,
+    #252525 0%,
+    var(--card) 100%
+  );
+  padding: 18px;
+  border-radius: 22px;
+  box-shadow:
+    0 10px 30px var(--shadow);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.player:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.player h2 {
+  font-size: 1.5rem;
+  margin-bottom: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* iframe 共通 */
+.player iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 18px;
+  border: 2px solid transparent;
+}
+
+/* ---- チャンネル別カラー ---- */
+
+/* channelKey: 1 → 淡いオレンジ */
+.channel-1 h2 {
+  color: var(--orange);
+}
+.channel-1 iframe {
+  border-color: var(--orange);
+}
+
+/* channelKey: 2 → 淡いグリーン */
+.channel-2 h2 {
+  color: var(--green);
+}
+.channel-2 iframe {
+  border-color: var(--green);
+}
+
+/* channelKey: 3 → 淡いブルー */
+.channel-3 h2 {
+  color: var(--blue);
+}
+.channel-3 iframe {
+  border-color: var(--blue);
+}
+
+/* ボタン */
+button {
+  margin: 12px auto 32px;
+  padding: 12px 26px;
+  font-size: 14px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--orange),
+      var(--green),
+      var(--blue)
+    );
+  color: #222;
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 10px 26px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+  margin: 40px 0 24px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+}
+
+footer a:hover {
+  opacity: 0.8;
+}

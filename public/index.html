@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta property="og:title" content="今日のmymeランダムガチャ" />
+  <meta property="og:description" content="今日はどんな音楽に出会うか。気分で引く、静かな音楽ガチャ。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR-PROJECT.vercel.app/" />
+  <meta property="og:image" content="https://YOUR-PROJECT.vercel.app/ogp.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title>今日のmymeランダムガチャ</title>
+  <link rel="stylesheet" href="/style.css?ccc" />
+</head>
+<body>
+  <header>
+    <h1>今日のmymeランダムガチャ</h1>
+  </header>
+  <main>
+    <div id="players"></div>
+
+    <button id="reload">もう一回引く</button>
+    <p>※2026/04/11時点で投稿されている曲からピックアップ</p>
+  </main>
+  <footer>
+    <p>
+      Made quietly by
+      <a href="https://github.com/Kohpikapika" target="_blank" rel="noopener">
+        KohPika
+      </a>
+    </p>
+  </footer>
+
+  <script>
+    async function loadMusic() {
+      const res = await fetch('/music.json')
+      const list = await res.json()
+
+      // channelKey ごとにまとめる
+      const map = {}
+      list.forEach(v => {
+        map[v.channelKey] ??= []
+        map[v.channelKey].push(v)
+      })
+
+      // 各チャンネルから1曲
+      const selected = Object.values(map).map(arr =>
+        arr[Math.floor(Math.random() * arr.length)]
+      )
+
+      const container = document.getElementById('players')
+      container.innerHTML = ''
+
+      selected.forEach((v, index) => {
+        const wrap = document.createElement('div')
+        wrap.className = 'player ' + 'channel-' + (index + 1)
+
+        wrap.innerHTML = `
+          <h2>${v.title}</h2>
+          <iframe
+            src="https://www.youtube.com/embed/${v.videoId}"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        `
+        container.appendChild(wrap)
+      })
+    }
+
+    document.getElementById('reload').onclick = loadMusic
+    loadMusic()
+  </script>
+</body>
+</html>
