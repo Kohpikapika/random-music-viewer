@@ -22,7 +22,7 @@
     <div id="players"></div>
 
     <button id="reload">もう一回引く</button>
-    <p>※2026/04/15時点で投稿されている曲からピックアップ</p>
+    <p>※<span id="createDate"></span>時点で投稿されている曲からピックアップ</p>
   </main>
   <footer>
     <p>
@@ -36,7 +36,11 @@
   <script>
     async function loadMusic() {
       const res = await fetch('/music.json')
-      const list = await res.json()
+      const json = await res.json()
+      const createDate = (new Date(json.createDate)).toLocaleDateString('ja-JP')
+      const list = json.videos
+
+      document.getElementById("createDate").innerHTML = createDate;
 
       // channelKey ごとにまとめる
       const map = {}
