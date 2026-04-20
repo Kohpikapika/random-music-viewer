@@ -1,6 +1,12 @@
 {
-  "createDate": "2026-04-19T03:43:09.802Z",
+  "createDate": "2026-04-20T03:20:51.051Z",
   "videos": [
+    {
+      "channelKey": "mayui",
+      "title": "YURU-MARU!!（部長ver.）/ 繭糸｜Visualizer",
+      "videoId": "MCxnMpCuTZk",
+      "publishedAt": "2026-04-19T11:00:06Z"
+    },
     {
       "channelKey": "mayui",
       "title": "ゆるみのこころ（feat.みちとせ,それ故） / 繭糸｜Visualizer",
@@ -30,12 +36,6 @@
       "title": "Unrealistic Siesta（feat.君乃あるじ,眠音みよ）/ 繭糸｜Visualizer",
       "videoId": "iJqEbrx7nRo",
       "publishedAt": "2026-04-18T12:17:53Z"
-    },
-    {
-      "channelKey": "mayui",
-      "title": "YURU-MARU!!（部長ver.）/ 繭糸｜Visualizer",
-      "videoId": "MCxnMpCuTZk",
-      "publishedAt": "2026-04-18T07:34:52Z"
     },
     {
       "channelKey": "mayui",
@@ -582,6 +582,12 @@
       "title": "少女レイ/みきとP covered by 繭糸【Vsinger】",
       "videoId": "ijR41bEYWXQ",
       "publishedAt": "2023-08-10T10:00:07Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "#m3春2026 みちとせ2ndEP（Book）\" ふしぎがる \"Tr.3ラブリーネクター/可ラッカ2026.4.26（sun.） M3春最速販売 #Vsinger #vtuber  #同人音楽",
+      "videoId": "u8w2L3I65Pw",
+      "publishedAt": "2026-04-19T10:05:30Z"
     },
     {
       "channelKey": "michitose",
