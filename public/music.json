@@ -1,6 +1,12 @@
 {
-  "createDate": "2026-05-21T04:07:23.715Z",
+  "createDate": "2026-05-22T04:01:50.294Z",
   "videos": [
+    {
+      "channelKey": "mayui",
+      "title": "#Shorts Eureka / 星野源 #弾き語り",
+      "videoId": "-1txRiE1PuM",
+      "publishedAt": "2026-05-21T09:00:24Z"
+    },
     {
       "channelKey": "mayui",
       "title": "#Shorts カスの嘘バトル #いちゆる #podcast",
@@ -9,7 +15,7 @@
     },
     {
       "channelKey": "mayui",
-      "title": "本当にねむかったり、謎を解いたりする、ゆるみ。",
+      "title": "#2 本当にねむかったり、謎を解いたりする、ゆるみ。",
       "videoId": "72ySVYpXwfE",
       "publishedAt": "2026-05-19T15:13:20Z"
     },
