@@ -1,6 +1,24 @@
 {
-  "createDate": "2026-05-27T04:12:00.286Z",
+  "createDate": "2026-05-29T11:43:29.045Z",
   "videos": [
+    {
+      "channelKey": "mayui",
+      "title": "#Shorts 突然生まれた休み（祈り）（仮定）、どうする？ #いちゆる #podcast",
+      "videoId": "AuYrkfEQXBM",
+      "publishedAt": "2026-05-29T09:00:12Z"
+    },
+    {
+      "channelKey": "mayui",
+      "title": "#Shorts 電車かもしれない / たま #弾き語り",
+      "videoId": "56GR5TdGQMs",
+      "publishedAt": "2026-05-28T09:00:28Z"
+    },
+    {
+      "channelKey": "mayui",
+      "title": "#Shorts ぼくときみ / おかあさんといっしょ #弾き語り",
+      "videoId": "36wEVdtxXjI",
+      "publishedAt": "2026-05-27T09:00:32Z"
+    },
     {
       "channelKey": "mayui",
       "title": "#3 積読とジャンプラを消化する、ゆるみ。",
