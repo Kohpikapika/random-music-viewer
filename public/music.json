@@ -1,6 +1,18 @@
 {
-  "createDate": "2026-06-10T04:06:09.607Z",
+  "createDate": "2026-06-11T04:19:26.192Z",
   "videos": [
+    {
+      "channelKey": "mayui",
+      "title": "【投票今夜24時まで】ラストラン【#ufret弾き語りオーディション2026 】",
+      "videoId": "JJDlme0AngU",
+      "publishedAt": "2026-06-03T10:44:51Z"
+    },
+    {
+      "channelKey": "mayui",
+      "title": "#Shorts TIMING / ブラックビスケッツ #弾き語り",
+      "videoId": "8pa2yiZhXI0",
+      "publishedAt": "2026-06-10T09:30:24Z"
+    },
     {
       "channelKey": "mayui",
       "title": "#Shorts 平成を懐古するお蚕さま #Vtuber #切り抜き",
@@ -66,12 +78,6 @@
       "title": "#shorts 宣言 #ufret弾き語りオーディション2026",
       "videoId": "qQ-hyZih2-4",
       "publishedAt": "2026-06-04T03:47:39Z"
-    },
-    {
-      "channelKey": "mayui",
-      "title": "【投票今夜24時まで】ラストラン【#ufret弾き語りオーディション2026 】",
-      "videoId": "JJDlme0AngU",
-      "publishedAt": "2026-06-03T10:44:51Z"
     },
     {
       "channelKey": "mayui",
@@ -837,6 +843,12 @@
     },
     {
       "channelKey": "michitose",
+      "title": "#shorts このお蚕は、さらに高いところまで自由にはばたける蚕だと、強く信じているよ！投票方法は説明欄をチェケd^._.^b",
+      "videoId": "hHFgVpuH_Zc",
+      "publishedAt": "2026-06-10T10:15:45Z"
+    },
+    {
+      "channelKey": "michitose",
       "title": "6月8日(月)のおはとせ！声でコメント返信するやつやってみたい🫢 #VTuber #VSinger #short",
       "videoId": "qMc70VmJKNc",
       "publishedAt": "2026-06-08T00:05:40Z"
@@ -1272,6 +1284,12 @@
       "title": "再会 - はるまきごはん / みちとせ (cover)",
       "videoId": "sa7XpEUuyoY",
       "publishedAt": "2023-03-10T11:00:44Z"
+    },
+    {
+      "channelKey": "soreyue",
+      "title": "【MV】 ひかりたがい / それ故 × kodani asuka",
+      "videoId": "pt-jvVwihj0",
+      "publishedAt": "2026-06-06T13:06:35Z"
     },
     {
       "channelKey": "soreyue",
