@@ -1,11 +1,17 @@
 {
-  "createDate": "2026-06-11T04:19:26.192Z",
+  "createDate": "2026-06-12T04:21:46.267Z",
   "videos": [
+    {
+      "channelKey": "mayui",
+      "title": "#Shorts 青い車 / スピッツ #弾き語り",
+      "videoId": "vo80VnzHrAM",
+      "publishedAt": "2026-06-11T09:00:07Z"
+    },
     {
       "channelKey": "mayui",
       "title": "【投票今夜24時まで】ラストラン【#ufret弾き語りオーディション2026 】",
       "videoId": "JJDlme0AngU",
-      "publishedAt": "2026-06-03T10:44:51Z"
+      "publishedAt": "2026-06-11T06:07:36Z"
     },
     {
       "channelKey": "mayui",
