@@ -1,6 +1,12 @@
 {
-  "createDate": "2026-06-16T04:48:42.382Z",
+  "createDate": "2026-06-17T04:39:03.668Z",
   "videos": [
+    {
+      "channelKey": "mayui",
+      "title": "#Shorts 有心論 / RADWIMPS #弾き語り",
+      "videoId": "Z10xIkNt8ww",
+      "publishedAt": "2026-06-16T09:00:30Z"
+    },
     {
       "channelKey": "mayui",
       "title": "【LiveMV】地獄でなぜ悪い /  星野源 Covered by 繭糸",
@@ -846,6 +852,12 @@
       "title": "少女レイ/みきとP covered by 繭糸【Vsinger】",
       "videoId": "ijR41bEYWXQ",
       "publishedAt": "2023-08-10T10:00:07Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "6月17日(水)のおはとせ！13時からめいぷるみーとさんの公式番組にゲスト出演するよ〜！ #VTuber #VSinger #shorts",
+      "videoId": "3I9uSokUwqo",
+      "publishedAt": "2026-06-16T23:28:55Z"
     },
     {
       "channelKey": "michitose",
