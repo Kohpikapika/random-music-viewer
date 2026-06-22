@@ -1,6 +1,18 @@
 {
-  "createDate": "2026-06-21T04:45:45.195Z",
+  "createDate": "2026-06-22T04:51:51.894Z",
   "videos": [
+    {
+      "channelKey": "mayui",
+      "title": "#Shorts ほしの記/ 繭糸 #VTuber #3D",
+      "videoId": "Ks6c7GuFKxg",
+      "publishedAt": "2026-06-22T03:00:10Z"
+    },
+    {
+      "channelKey": "mayui",
+      "title": "#Shorts そんなわけないじゃん！ coffee talk!/繭糸feat.みちとせ,それ故 #3D",
+      "videoId": "QQGWYmjqw_I",
+      "publishedAt": "2026-06-21T09:00:22Z"
+    },
     {
       "channelKey": "mayui",
       "title": "#Shorts 水星 / tofubeats Covered by 繭糸 #cover #歌ってみた",
@@ -1341,6 +1353,12 @@
     },
     {
       "channelKey": "soreyue",
+      "title": "クーネル・エンゲイザー (電ǂ鯨) / covered by yureru. × それ故",
+      "videoId": "dvMgScgft_E",
+      "publishedAt": "2026-06-21T11:00:06Z"
+    },
+    {
+      "channelKey": "soreyue",
       "title": "【MV】 ひかりたがい / それ故 × kodani asuka",
       "videoId": "pt-jvVwihj0",
       "publishedAt": "2026-06-14T11:00:06Z"
@@ -1350,12 +1368,6 @@
       "title": "あぶく（ヨルシカ） / covered by それ故",
       "videoId": "jMXn0pnI4T8",
       "publishedAt": "2026-06-04T11:00:20Z"
-    },
-    {
-      "channelKey": "soreyue",
-      "title": "クーネル・エンゲイザー (電ǂ鯨) / covered by yureru. × それ故",
-      "videoId": "dvMgScgft_E",
-      "publishedAt": "2026-05-27T11:23:41Z"
     },
     {
       "channelKey": "soreyue",
