@@ -1,11 +1,23 @@
 {
-  "createDate": "2026-06-23T03:55:30.661Z",
+  "createDate": "2026-06-24T03:56:53.090Z",
   "videos": [
+    {
+      "channelKey": "mayui",
+      "title": "急にデカい声出してもフラフラしてても怒られないマイクげとした #VTuber #LEWITT #ガジェット",
+      "videoId": "rtgYSrOtTME",
+      "publishedAt": "2026-06-24T03:00:01Z"
+    },
     {
       "channelKey": "mayui",
       "title": "#Shorts ほしの記録 / 繭糸 #VTuber #3D",
       "videoId": "Ks6c7GuFKxg",
       "publishedAt": "2026-06-22T03:00:10Z"
+    },
+    {
+      "channelKey": "mayui",
+      "title": "#Shorts VTuber感謝の高速エンドロール読み上げ #切り抜き",
+      "videoId": "kFg5UWOYdF0",
+      "publishedAt": "2026-06-22T03:00:03Z"
     },
     {
       "channelKey": "mayui",
@@ -897,6 +909,12 @@
     },
     {
       "channelKey": "michitose",
+      "title": "ペトリカ / みちとせ [MV]",
+      "videoId": "ZyoCsyZjQoc",
+      "publishedAt": "2026-06-23T12:53:06Z"
+    },
+    {
+      "channelKey": "michitose",
       "title": "6月17日(水)のおはとせ！13時からめいぷるみーとさんの公式番組にゲスト出演するよ〜！ #VTuber #VSinger #shorts",
       "videoId": "3I9uSokUwqo",
       "publishedAt": "2026-06-16T23:28:55Z"
@@ -1239,33 +1257,9 @@
     },
     {
       "channelKey": "michitose",
-      "title": "可愛くてごめん feat. みちとせ / DJ WILDPARTY Remix [Music Video]",
-      "videoId": "r3EuiF5KumU",
-      "publishedAt": "2024-06-28T11:00:49Z"
-    },
-    {
-      "channelKey": "michitose",
       "title": "Rain - 秦基博 / みちとせ (cover)",
       "videoId": "xOXC5yn0amo",
       "publishedAt": "2024-06-25T11:00:52Z"
-    },
-    {
-      "channelKey": "michitose",
-      "title": "clumsy trick - 姫崎莉波 / みちとせ (cover)",
-      "videoId": "Ha-gOPgzrTk",
-      "publishedAt": "2024-06-15T11:00:12Z"
-    },
-    {
-      "channelKey": "michitose",
-      "title": "踊り子 - Vaundy / kaede feat. みちとせ (cover)",
-      "videoId": "ke09nRMG7vg",
-      "publishedAt": "2024-05-25T11:00:39Z"
-    },
-    {
-      "channelKey": "michitose",
-      "title": "[幼稚園WARS 公式タイアップソング] 地獄の沙汰でも愛したいっ！ / みちとせ feat. 天使電影 [Music Video]",
-      "videoId": "32Bb5rtXmQY",
-      "publishedAt": "2024-05-10T12:00:05Z"
     },
     {
       "channelKey": "michitose",
@@ -1299,12 +1293,6 @@
     },
     {
       "channelKey": "michitose",
-      "title": "Booo! - 西沢さんP / みちとせ (cover)",
-      "videoId": "_lO0PpOXAaw",
-      "publishedAt": "2023-12-30T09:00:33Z"
-    },
-    {
-      "channelKey": "michitose",
       "title": "nuit - 春野 / みちとせ (cover)",
       "videoId": "q5-hRfT42Xs",
       "publishedAt": "2023-11-17T11:00:47Z"
@@ -1320,36 +1308,6 @@
       "title": "いれない - 是 / みちとせ (cover)",
       "videoId": "40rFgvv55T4",
       "publishedAt": "2023-09-16T12:00:03Z"
-    },
-    {
-      "channelKey": "michitose",
-      "title": "ハナミズキ - 一青窈 / みちとせ (cover)",
-      "videoId": "_-WD4nDVghI",
-      "publishedAt": "2023-09-13T12:00:35Z"
-    },
-    {
-      "channelKey": "michitose",
-      "title": "I am a broken umbrella - Nem / みちとせ (cover)",
-      "videoId": "VVivhBZVd6c",
-      "publishedAt": "2023-07-28T11:00:32Z"
-    },
-    {
-      "channelKey": "michitose",
-      "title": "アルジャーノン - ヨルシカ / みちとせ (cover)",
-      "videoId": "L7JN76PuIek",
-      "publishedAt": "2023-05-27T11:00:13Z"
-    },
-    {
-      "channelKey": "michitose",
-      "title": "四月になること - くじら / みちとせ (cover)",
-      "videoId": "czSGTEK4ARk",
-      "publishedAt": "2023-04-22T11:00:21Z"
-    },
-    {
-      "channelKey": "michitose",
-      "title": "再会 - はるまきごはん / みちとせ (cover)",
-      "videoId": "sa7XpEUuyoY",
-      "publishedAt": "2023-03-10T11:00:44Z"
     },
     {
       "channelKey": "soreyue",
