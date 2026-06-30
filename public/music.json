@@ -1,6 +1,12 @@
 {
-  "createDate": "2026-06-29T04:19:13.520Z",
+  "createDate": "2026-06-30T03:59:54.701Z",
   "videos": [
+    {
+      "channelKey": "mayui",
+      "title": "#Shorts 君のように生きれたら / 宇宙ネコ子 #弾き語り",
+      "videoId": "C2HBXXsntPI",
+      "publishedAt": "2026-06-29T09:00:29Z"
+    },
     {
       "channelKey": "mayui",
       "title": "【FULLは\"みたにみく\"Chへ】異色の新作、相性抜群ハーモニー「 雲間警報 / Albus écru 」#Shorts #VocaDuo2026",
@@ -1344,6 +1350,12 @@
       "title": "いれない - 是 / みちとせ (cover)",
       "videoId": "40rFgvv55T4",
       "publishedAt": "2023-09-16T12:00:03Z"
+    },
+    {
+      "channelKey": "soreyue",
+      "title": "晴れ、ときどき、スキップ / deu120 【#Vocaduo2026】",
+      "videoId": "gE2j08Krr6M",
+      "publishedAt": "2026-06-28T11:33:43Z"
     },
     {
       "channelKey": "soreyue",
