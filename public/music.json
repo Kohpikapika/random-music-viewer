@@ -1,6 +1,12 @@
 {
-  "createDate": "2026-07-06T03:56:39.552Z",
+  "createDate": "2026-07-07T03:47:32.773Z",
   "videos": [
+    {
+      "channelKey": "mayui",
+      "title": "#Shorts Why / 星野源 #弾き語り",
+      "videoId": "xLadhNCRw4E",
+      "publishedAt": "2026-07-06T09:00:25Z"
+    },
     {
       "channelKey": "mayui",
       "title": "ep.1 外の生活にも慣れました / 繭糸｜Teaser PV",
@@ -957,6 +963,12 @@
     },
     {
       "channelKey": "michitose",
+      "title": "Diorama/ゆめひつじ feat. みちとせ",
+      "videoId": "j8yeVTwGuP8",
+      "publishedAt": "2026-07-06T12:35:53Z"
+    },
+    {
+      "channelKey": "michitose",
       "title": "グリグリメガネと月光蟲/古川本舗(cover) #shorts #vsinger",
       "videoId": "AnlesnzBOPI",
       "publishedAt": "2026-07-05T01:30:55Z"
@@ -1077,6 +1089,12 @@
     },
     {
       "channelKey": "michitose",
+      "title": "【梵そよぎ・音街ウナ・みちとせ・いがらし・氷山キヨテル】トンデモワンダーズ【Cover】",
+      "videoId": "E4UAsDdqwus",
+      "publishedAt": "2026-04-11T11:00:22Z"
+    },
+    {
+      "channelKey": "michitose",
       "title": "ひととせ / みちとせ&水魚みぃむ [MV]",
       "videoId": "dcyhzGuZtJg",
       "publishedAt": "2026-03-29T11:00:06Z"
@@ -1089,15 +1107,39 @@
     },
     {
       "channelKey": "michitose",
+      "title": "仮装狂騒曲 / 初星学園 covered by 眠音みよ×君乃あるじ×みちとせ fromゆるみ部",
+      "videoId": "7SXwW9HpZfU",
+      "publishedAt": "2025-12-30T12:00:06Z"
+    },
+    {
+      "channelKey": "michitose",
       "title": "[ #M3秋2025 ] 2ndAlbum「モモイロエイド」XFD [ V-28b #M3秋 ]",
       "videoId": "houWISaG2O8",
       "publishedAt": "2025-10-17T12:08:25Z"
     },
     {
       "channelKey": "michitose",
+      "title": "愛♡スクリ～ム！ / AiScReam Covered by みちとせ×勿忘うた×まより",
+      "videoId": "1HDono7isIc",
+      "publishedAt": "2025-10-04T11:00:06Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "食べなくちゃ(cover)",
+      "videoId": "28_5H9mdAnQ",
+      "publishedAt": "2025-09-25T12:00:04Z"
+    },
+    {
+      "channelKey": "michitose",
       "title": "〖 #VNF2025 〗みちとせのまどろみ / みちとせ feat.日々乃ねむり〖 Music Video 〗",
       "videoId": "qMGZKy4xwoU",
       "publishedAt": "2025-07-31T14:45:06Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "おもかげ (produced by Vaundy) / milet×Aimer×幾田りら covered by とめまゆとせ",
+      "videoId": "pfCFJ5b7F7Y",
+      "publishedAt": "2025-05-31T11:00:06Z"
     },
     {
       "channelKey": "michitose",
@@ -1113,9 +1155,27 @@
     },
     {
       "channelKey": "michitose",
+      "title": "煙の湊 - 世界電力 / みちとせ (cover)",
+      "videoId": "nSdUxeKVYmU",
+      "publishedAt": "2025-03-20T12:01:14Z"
+    },
+    {
+      "channelKey": "michitose",
       "title": "プラネタリウム・ミュージシャン / みちとせ feat. TAKIO [Music Video]",
       "videoId": "1RLV8mFkU7k",
       "publishedAt": "2025-03-10T11:00:01Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "メクルメ - 篠澤 広 / みちとせ (cover)",
+      "videoId": "uM3y-dhD9v0",
+      "publishedAt": "2025-02-28T11:01:20Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "アイデンティティ - Kanaria / みちとせ × 乃花こより (cover)",
+      "videoId": "t337nx4-0zc",
+      "publishedAt": "2025-02-14T11:01:26Z"
     },
     {
       "channelKey": "michitose",
@@ -1125,15 +1185,75 @@
     },
     {
       "channelKey": "michitose",
+      "title": "プラネテス - seiza / みちとせ (cover)",
+      "videoId": "6pzKx6Ef67Q",
+      "publishedAt": "2024-12-20T11:00:17Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "愛の容器 - みきとP / みちとせ・いがらし (cover)",
+      "videoId": "50I-NoEhgdQ",
+      "publishedAt": "2024-12-13T11:00:09Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "優しい人と言わないで - Tokaya / みちとせ (cover)",
+      "videoId": "CTK-F8SRxPM",
+      "publishedAt": "2024-12-07T11:00:10Z"
+    },
+    {
+      "channelKey": "michitose",
       "title": "One Finger Snap / koge×みちとせ [Music Video]",
       "videoId": "Q34XAgq4GdI",
       "publishedAt": "2024-11-30T11:00:35Z"
     },
     {
       "channelKey": "michitose",
+      "title": "エンパープル - はるまきごはん / みちとせ (cover)",
+      "videoId": "UtqGReyoMtQ",
+      "publishedAt": "2024-11-22T12:00:41Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "せいれーん / ことりっぷ feat. みちとせ [Music Video]",
+      "videoId": "kLcpYRmN9DI",
+      "publishedAt": "2024-11-21T10:00:47Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "救いたかったのは - Δ / みちとせ (cover)",
+      "videoId": "JEd9lWc02zU",
+      "publishedAt": "2024-11-08T11:00:31Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "[ 3DMV ] 可愛くてごめん - DJ WILDPARTY Remix / みちとせ [ VSinger🌸]",
+      "videoId": "D3On_o-N8FU",
+      "publishedAt": "2024-11-01T11:00:14Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "あの夏が飽和する。- カンザキイオリ / みちとせ feat. 柳若葉 (cover)",
+      "videoId": "ZeiAffVtH1c",
+      "publishedAt": "2024-10-19T11:00:40Z"
+    },
+    {
+      "channelKey": "michitose",
       "title": "[ M3-2024秋 ] scales night - creep × みちとせ 1stEP - [ #M3秋 XFD ]",
       "videoId": "IcU54kHD-rc",
       "publishedAt": "2024-10-11T11:00:28Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "[ M3-2024秋 ] 空想のアマリリス - Nem×とうめいのくに×みちとせ collaboration mini album - [ #M3秋 XFD ]",
+      "videoId": "JyNOItP7GY4",
+      "publishedAt": "2024-10-11T11:00:18Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "[ 3DMV ] 夜もすがら君想ふ(10th Anniv.) - TOKOTOKO(西沢さんP) / みちとせ (cover) [VSinger🌸]",
+      "videoId": "eYOfGRmdPYs",
+      "publishedAt": "2024-10-05T11:00:42Z"
     },
     {
       "channelKey": "michitose",
@@ -1215,15 +1335,57 @@
     },
     {
       "channelKey": "michitose",
+      "title": "Rain - 秦基博 / みちとせ (cover)",
+      "videoId": "xOXC5yn0amo",
+      "publishedAt": "2024-06-25T11:00:52Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "エイプリル - mol-74 / みちとせ (cover)",
+      "videoId": "N9uAwli2APg",
+      "publishedAt": "2024-04-26T11:00:19Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "あちこちデートさん - 駄菓子O型 / みちとせ (cover)",
+      "videoId": "jNTM0ePff0I",
+      "publishedAt": "2024-03-22T12:00:44Z"
+    },
+    {
+      "channelKey": "michitose",
       "title": "ほたるプラネタ / みちとせ feat. creep [Music Video]",
       "videoId": "UJYX9lc0sLg",
       "publishedAt": "2024-03-15T11:00:24Z"
     },
     {
       "channelKey": "michitose",
+      "title": "さようなら、花泥棒さん - メル / みちとせ (cover)",
+      "videoId": "kAWL5c_jR7A",
+      "publishedAt": "2024-03-01T11:00:48Z"
+    },
+    {
+      "channelKey": "michitose",
       "title": "幸せな別れを / みちとせ feat. 色葉カエデ [Music Video]",
       "videoId": "eJNZLGLj2dQ",
       "publishedAt": "2024-02-16T11:00:37Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "nuit - 春野 / みちとせ (cover)",
+      "videoId": "q5-hRfT42Xs",
+      "publishedAt": "2023-11-17T11:00:47Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "レイジー・クルーズ - cat nap / みちとせ & Synthesizer V Yuma (cover)",
+      "videoId": "yRITUETvkAE",
+      "publishedAt": "2023-10-27T11:00:54Z"
+    },
+    {
+      "channelKey": "michitose",
+      "title": "いれない - 是 / みちとせ (cover)",
+      "videoId": "40rFgvv55T4",
+      "publishedAt": "2023-09-16T12:00:03Z"
     },
     {
       "channelKey": "soreyue",
