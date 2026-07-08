@@ -1,6 +1,12 @@
 {
-  "createDate": "2026-07-07T03:47:32.773Z",
+  "createDate": "2026-07-08T03:15:21.222Z",
   "videos": [
+    {
+      "channelKey": "mayui",
+      "title": "#Shorts TOKAKUKA / 秋山 竜次 #弾き語り",
+      "videoId": "FstPHkfTREw",
+      "publishedAt": "2026-07-07T09:00:39Z"
+    },
     {
       "channelKey": "mayui",
       "title": "#Shorts Why / 星野源 #弾き語り",
@@ -965,7 +971,7 @@
       "channelKey": "michitose",
       "title": "Diorama/ゆめひつじ feat. みちとせ",
       "videoId": "j8yeVTwGuP8",
-      "publishedAt": "2026-07-06T12:35:53Z"
+      "publishedAt": "2026-07-07T11:00:06Z"
     },
     {
       "channelKey": "michitose",
