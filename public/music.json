@@ -1,5 +1,5 @@
 {
-  "createDate": "2026-07-16T02:52:06.295Z",
+  "createDate": "2026-07-17T02:54:43.759Z",
   "videos": [
     {
       "channelKey": "mayui",
@@ -1416,6 +1416,12 @@
       "title": "いれない - 是 / みちとせ (cover)",
       "videoId": "40rFgvv55T4",
       "publishedAt": "2023-09-16T12:00:03Z"
+    },
+    {
+      "channelKey": "soreyue",
+      "title": "それ故 のライブ配信",
+      "videoId": "qmac_9odj9o",
+      "publishedAt": "2026-07-16T05:19:56Z"
     },
     {
       "channelKey": "soreyue",
