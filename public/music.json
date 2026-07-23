@@ -1,6 +1,18 @@
 {
-  "createDate": "2026-07-22T02:55:16.187Z",
+  "createDate": "2026-07-23T03:17:06.826Z",
   "videos": [
+    {
+      "channelKey": "mayui",
+      "title": "こんばんは",
+      "videoId": "X_xHgENqO4Y",
+      "publishedAt": "2026-07-23T02:38:22Z"
+    },
+    {
+      "channelKey": "mayui",
+      "title": "#Shorts #chill #chillmusic ラクトアイス / 繭糸",
+      "videoId": "8mbUVGOedSY",
+      "publishedAt": "2026-07-22T09:00:01Z"
+    },
     {
       "channelKey": "mayui",
       "title": "#Shorts きもちい変拍子｜天使 / 繭糸",
@@ -1434,6 +1446,12 @@
       "title": "いれない - 是 / みちとせ (cover)",
       "videoId": "40rFgvv55T4",
       "publishedAt": "2023-09-16T12:00:03Z"
+    },
+    {
+      "channelKey": "soreyue",
+      "title": "【MV】エンドC /それ故",
+      "videoId": "Y5uzUWvsok0",
+      "publishedAt": "2026-07-21T07:12:29Z"
     },
     {
       "channelKey": "soreyue",
