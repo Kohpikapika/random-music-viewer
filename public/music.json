@@ -1,17 +1,17 @@
 {
-  "createDate": "2026-07-24T02:55:56.778Z",
+  "createDate": "2026-07-25T02:55:32.309Z",
   "videos": [
+    {
+      "channelKey": "mayui",
+      "title": "#Shorts カブトムシ / aiko #弾き語り",
+      "videoId": "aFH4dx2J7co",
+      "publishedAt": "2026-07-24T09:30:16Z"
+    },
     {
       "channelKey": "mayui",
       "title": "#Shorts 花に亡霊 / ヨルシカ #弾き語り",
       "videoId": "WVsenc4-ypA",
       "publishedAt": "2026-07-23T09:00:03Z"
-    },
-    {
-      "channelKey": "mayui",
-      "title": "こんばんは",
-      "videoId": "X_xHgENqO4Y",
-      "publishedAt": "2026-07-23T02:38:22Z"
     },
     {
       "channelKey": "mayui",
@@ -1457,7 +1457,7 @@
       "channelKey": "soreyue",
       "title": "【MV】エンドC /それ故",
       "videoId": "Y5uzUWvsok0",
-      "publishedAt": "2026-07-21T07:12:29Z"
+      "publishedAt": "2026-07-24T11:00:06Z"
     },
     {
       "channelKey": "soreyue",
@@ -1686,6 +1686,12 @@
       "title": "SURF(ポルカドットスティングレイ）/ covered by それ故",
       "videoId": "zGZVS6mdNXg",
       "publishedAt": "2023-10-23T13:00:49Z"
+    },
+    {
+      "channelKey": "soreyue",
+      "title": "殺し屋危機一髪(SOIL&\"PIMP\"SESSIONSと椎名林檎) / covered by それ故",
+      "videoId": "pwu656TRdaA",
+      "publishedAt": "2023-09-15T11:00:50Z"
     },
     {
       "channelKey": "soreyue",
