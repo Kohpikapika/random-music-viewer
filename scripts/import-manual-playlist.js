@@ -11,7 +11,9 @@ function readArgument(name) {
 }
 
 function getPlaylistId(value) {
-  if (!value) return ''
+  if (!value) {
+    return ''
+  }
 
   try {
     const url = new URL(value)
@@ -95,8 +97,14 @@ function mergeVideos(existingVideos, importedVideos) {
   const videosById = new Map()
 
   for (const video of existingVideos) {
-    if (!video?.videoId) continue
-    if (!videosById.has(video.videoId)) order.push(video.videoId)
+    if (!video?.videoId) {
+      continue
+    }
+
+    if (!videosById.has(video.videoId)) {
+      order.push(video.videoId)
+    }
+
     videosById.set(video.videoId, video)
   }
 
@@ -107,7 +115,10 @@ function mergeVideos(existingVideos, importedVideos) {
     if (videosById.has(video.videoId)) {
       updated += 1
       const existingVideo = videosById.get(video.videoId)
+
+      // 手作業で設定したchannelKeyは、プレイリストの再取得時にも保持する。
       const hasExistingChannelKey = Object.prototype.hasOwnProperty.call(existingVideo, 'channelKey')
+
       videosById.set(video.videoId, {
         ...video,
         ...(hasExistingChannelKey ? { channelKey: existingVideo.channelKey } : {}),
@@ -152,6 +163,7 @@ async function run() {
 
   const merged = mergeVideos(existingVideos, importedVideos)
   const next = { ...current, videos: merged.videos }
+  // 取得途中の失敗で既存JSONを壊さないよう、一時ファイルの完成後に置き換える。
   const temporaryPath = `${MANUAL_JSON_PATH}.tmp`
 
   await writeFile(temporaryPath, `${JSON.stringify(next, null, 2)}\n`, 'utf8')

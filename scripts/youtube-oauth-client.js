@@ -11,11 +11,19 @@ export async function loadLocalEnv() {
 
     for (const line of source.split(/\r?\n/)) {
       const match = line.match(/^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*?)\s*$/)
-      if (!match || match[0].trimStart().startsWith('#') || process.env[match[1]]) continue
+
+      // シェルで設定された環境変数を、ローカルファイルの値で上書きしない。
+      if (!match || match[0].trimStart().startsWith('#') || process.env[match[1]]) {
+        continue
+      }
+
       process.env[match[1]] = match[2].replace(/^(['"])(.*)\1$/, '$2')
     }
   } catch (error) {
-    if (error.code !== 'ENOENT') throw error
+    // .env.localは任意だが、それ以外の読み込みエラーは隠さない。
+    if (error.code !== 'ENOENT') {
+      throw error
+    }
   }
 }
 
@@ -47,6 +55,7 @@ export async function requestToken(parameters) {
 }
 
 export async function saveOAuthTokens(tokens, previous = {}) {
+  // Googleが再認証時にrefresh tokenを返さない場合は、保存済みの値を引き継ぐ。
   const stored = {
     ...previous,
     ...tokens,
@@ -72,7 +81,11 @@ export async function getYouTubeAccessToken() {
     throw error
   }
 
-  if (stored.access_token && Number(stored.expires_at) > Date.now() + 60_000) {
+  // 期限直前のトークンを使わないよう、60秒の余裕を持って更新する。
+  const tokenIsUsable = stored.access_token
+    && Number(stored.expires_at) > Date.now() + 60_000
+
+  if (tokenIsUsable) {
     return stored.access_token
   }
   if (!stored.refresh_token) {

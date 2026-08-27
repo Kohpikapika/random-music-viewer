@@ -9,6 +9,10 @@
     { id: 'shorts', label: 'ショート' },
     ...livers.map((liver) => ({ id: liver.key, label: liver.name, color: liver.color })),
   ]
+
+  function selectTab(tabId) {
+    activeTab = tabId
+  }
 </script>
 
 <section class="channel-shell" aria-labelledby="channel-title">
@@ -41,7 +45,7 @@
         class:member-tab={Boolean(tab.color)}
         style={tab.color ? `--tab-color: ${tab.color}` : undefined}
         aria-current={activeTab === tab.id ? 'page' : undefined}
-        on:click={() => (activeTab = tab.id)}
+        on:click={() => selectTab(tab.id)}
       >{tab.label}</button>
     {/each}
   </nav>

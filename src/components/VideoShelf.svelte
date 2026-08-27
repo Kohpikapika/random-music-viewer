@@ -10,6 +10,10 @@
   export let redrawLabel = ''
 
   const dispatch = createEventDispatcher()
+
+  function redrawVideos() {
+    dispatch('redraw')
+  }
 </script>
 
 <section class="video-shelf" id={liver.key} style={`--liver-color: ${liver.color}; --liver-tint: ${liver.tint}`}>
@@ -17,7 +21,7 @@
     <span class="section-avatar" aria-hidden="true">{liver.initial}</span>
     <h2>{heading || `${liver.name}の動画`}</h2>
     {#if redrawLabel}
-      <button class="shelf-redraw" type="button" on:click={() => dispatch('redraw')}>
+      <button class="shelf-redraw" type="button" on:click={redrawVideos}>
         <span aria-hidden="true">↻</span> {redrawLabel}
       </button>
     {/if}

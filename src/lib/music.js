@@ -4,7 +4,9 @@ export async function loadMusicLibrary() {
     fetch('/music.manual.json').catch(() => null),
   ])
 
-  if (!autoResponse.ok) throw new Error('動画データを読み込めませんでした。')
+  if (!autoResponse.ok) {
+    throw new Error('動画データを読み込めませんでした。')
+  }
 
   const autoData = await autoResponse.json()
   const manualData = manualResponse?.ok ? await manualResponse.json() : { videos: [] }
@@ -37,6 +39,8 @@ export function mergeVideoLibraries(autoVideos = [], manualVideos = []) {
 
 export function isExcludedVideo(video) {
   const title = video.title ?? ''
+
+  // 告知・配信系の動画は、どのタブにも表示しない。
   return title.includes('受注販売') || title.includes('ライブ配信')
 }
 
@@ -70,7 +74,10 @@ export function interleaveVideos(groupedVideos, livers, limitPerLiver = 8) {
   for (let index = 0; index < limitPerLiver; index += 1) {
     for (const { key } of livers) {
       const video = groupedVideos[key]?.[index]
-      if (video) videos.push(video)
+
+      if (video) {
+        videos.push(video)
+      }
     }
   }
 
@@ -89,7 +96,10 @@ export function pickRandomVideos(videos, limit = 8) {
 }
 
 export function formatPublishedDate(value) {
-  if (!value) return ''
+  if (!value) {
+    return ''
+  }
+
   return new Intl.DateTimeFormat('ja-JP', {
     year: 'numeric',
     month: 'numeric',
