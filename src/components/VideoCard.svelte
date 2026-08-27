@@ -30,7 +30,7 @@
           {video.title}
         </a>
       </h3>
-      <p><strong>{liver.name}</strong><span>・</span>{formatPublishedDate(video.publishedAt)}</p>
+      <p>{formatPublishedDate(video.publishedAt)}</p>
     </div>
   </div>
 </article>

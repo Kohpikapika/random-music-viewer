@@ -65,7 +65,7 @@
 </script>
 
 <svelte:head>
-  <title>MYME Tube | MYMEの音楽を気ままに巡る非公式ファンサイト</title>
+  <title>MYME Tube | mymeの音楽を気ままに巡る非公式ファンサイト</title>
 </svelte:head>
 
 <div id="top">
@@ -73,7 +73,7 @@
   <main>
     <ChannelHero bind:activeTab />
     {#if loading}
-      <div class="status" role="status">MYMEの音楽を準備しています…</div>
+      <div class="status" role="status">mymeの音楽を準備しています…</div>
     {:else if errorMessage}
       <div class="status error" role="alert">{errorMessage}</div>
     {:else}
@@ -82,7 +82,7 @@
         <div class="content-heading">
           <div>
             <p class="eyebrow">TODAY'S PICKS</p>
-            <h2>今日のMYMEランダムガチャ</h2>
+            <h2>今日のmymeランダムガチャ</h2>
             <p>3人それぞれから、今日の2曲を選びました。</p>
           </div>
           <button type="button" on:click={drawRecommendations}><span aria-hidden="true">↻</span> もう一回引く</button>

@@ -22,7 +22,7 @@
   <div class="info-content">
     <section>
       <h2>非公式ファンサイトです</h2>
-      <p>MYME Tubeは、VTuberユニット「MYME」の音楽に気軽に出会うために個人が制作・運営している非公式ファンサイトです。MYMEおよび各メンバー、所属先、YouTubeとは関係ありません。</p>
+      <p>MYME Tubeは、VTuberユニット「myme」の音楽に気軽に出会うために個人が制作・運営している非公式ファンサイトです。mymeおよび各メンバー、所属先、YouTubeとは関係ありません。</p>
     </section>
 
     <section>

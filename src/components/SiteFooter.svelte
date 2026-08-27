@@ -1,5 +1,5 @@
 <footer class="site-footer">
-  <p>MYMEの音楽を、もっと気軽に。</p>
+  <p>mymeの音楽を、もっと気軽に。</p>
   <nav aria-label="サイト情報">
     <a href="/terms/">このサイトについて・利用規約</a>
     <a href="/help/">ヘルプ</a>

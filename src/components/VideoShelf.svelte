@@ -15,8 +15,7 @@
 <section class="video-shelf" id={liver.key} style={`--liver-color: ${liver.color}; --liver-tint: ${liver.tint}`}>
   <div class="section-heading">
     <span class="section-avatar" aria-hidden="true">{liver.initial}</span>
-    <div><p>{liver.reading}</p><h2>{heading || `${liver.name}の動画`}</h2></div>
-    <span class="video-count">{videos.length} videos</span>
+    <h2>{heading || `${liver.name}の動画`}</h2>
     {#if redrawLabel}
       <button class="shelf-redraw" type="button" on:click={() => dispatch('redraw')}>
         <span aria-hidden="true">↻</span> {redrawLabel}
