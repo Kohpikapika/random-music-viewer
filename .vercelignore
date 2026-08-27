@@ -1,0 +1,5 @@
+scripts/import-manual-playlist.js
+scripts/authorize-youtube.js
+scripts/youtube-oauth-client.js
+.env.local
+.youtube-oauth.json
