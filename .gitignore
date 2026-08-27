@@ -1,5 +1,7 @@
 # Node
 node_modules/
+.pnpm-store/
+.routify/
 
 # build / cache
 dist/
