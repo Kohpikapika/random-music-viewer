@@ -9,12 +9,30 @@ export async function loadMusicLibrary() {
   const autoData = await autoResponse.json()
   const manualData = manualResponse?.ok ? await manualResponse.json() : { videos: [] }
 
-  const videos = [...(autoData.videos ?? []), ...(manualData.videos ?? [])]
+  const videos = mergeVideoLibraries(autoData.videos, manualData.videos)
 
   return {
     createDate: autoData.createDate,
     videos: videos.filter((video) => !isExcludedVideo(video)),
   }
+}
+
+export function mergeVideoLibraries(autoVideos = [], manualVideos = []) {
+  const videosById = new Map()
+
+  // 同じvideoIdが両方にある場合に、自動取得したmusic.jsonを正として扱う。
+  for (const video of autoVideos ?? []) {
+    videosById.set(video.videoId, video)
+  }
+
+  // 手動データは、自動取得側に存在しない動画だけを補完する。
+  for (const video of manualVideos ?? []) {
+    if (!videosById.has(video.videoId)) {
+      videosById.set(video.videoId, video)
+    }
+  }
+
+  return [...videosById.values()]
 }
 
 export function isExcludedVideo(video) {
