@@ -1,11 +1,11 @@
 {
-  "createDate": "2026-08-30T04:34:16.835Z",
+  "createDate": "2026-08-31T04:38:36.155Z",
   "videos": [
     {
       "channelKey": "mayui",
       "title": "ぷろじぇくしょん。/ 繭糸",
       "videoId": "ily7lAfII7U",
-      "publishedAt": "2026-08-28T04:27:09Z"
+      "publishedAt": "2026-08-30T11:00:06Z"
     },
     {
       "channelKey": "mayui",
@@ -1530,6 +1530,12 @@
       "title": "いれない - 是 / みちとせ (cover)",
       "videoId": "40rFgvv55T4",
       "publishedAt": "2023-09-16T12:00:03Z"
+    },
+    {
+      "channelKey": "soreyue",
+      "title": "Blues in the Closet (ずっと真夜中でいいのに。) / covered by それ故",
+      "videoId": "ZAPRIqhdZ9w",
+      "publishedAt": "2026-08-30T11:00:03Z"
     },
     {
       "channelKey": "soreyue",
