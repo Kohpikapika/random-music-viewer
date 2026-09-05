@@ -1,5 +1,5 @@
 {
-  "createDate": "2026-09-04T03:45:15.971Z",
+  "createDate": "2026-09-05T03:42:16.345Z",
   "videos": [
     {
       "channelKey": "mayui",
@@ -1530,6 +1530,12 @@
       "title": "いれない - 是 / みちとせ (cover)",
       "videoId": "40rFgvv55T4",
       "publishedAt": "2023-09-16T12:00:03Z"
+    },
+    {
+      "channelKey": "soreyue",
+      "title": "summertime (cinnamons × evening cinema) / covered by 越前 × それ故",
+      "videoId": "BIVtllKoKSo",
+      "publishedAt": "2026-09-04T11:00:30Z"
     },
     {
       "channelKey": "soreyue",
