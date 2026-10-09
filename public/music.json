@@ -1,6 +1,18 @@
 {
-  "createDate": "2026-10-08T05:18:18.661Z",
+  "createDate": "2026-10-09T05:21:28.476Z",
   "videos": [
+    {
+      "channelKey": "mayui",
+      "title": "繭糸 2nd EP『silky pop』XFD - #M3秋2026 か-30ab",
+      "videoId": "X2f4vW-tJVg",
+      "publishedAt": "2026-10-08T16:03:05Z"
+    },
+    {
+      "channelKey": "mayui",
+      "title": "#Shorts ぷろじぇくしょん。/ 繭糸",
+      "videoId": "SwZ4nOGNz2Y",
+      "publishedAt": "2026-10-08T09:30:13Z"
+    },
     {
       "channelKey": "mayui",
       "title": "【生中継】VRカフェで店員お蚕とフォトコンテスト！ in GREETIO【概要欄】",
@@ -24,12 +36,6 @@
       "title": "LOVEずっきゅん / 相対性理論 Covered by 繭糸",
       "videoId": "acbCNZTMK6c",
       "publishedAt": "2026-08-23T11:30:06Z"
-    },
-    {
-      "channelKey": "mayui",
-      "title": "#shorts  1年前の夏ってもう全然過去 #歌ってみた",
-      "videoId": "_9omWZzM_sM",
-      "publishedAt": "2026-08-14T09:00:21Z"
     },
     {
       "channelKey": "mayui",
@@ -609,7 +615,7 @@
     },
     {
       "channelKey": "mayui",
-      "title": "繭糸 2nd album 『ゆるみの哲学』XFD - #M3春2026 V-9b",
+      "title": "繭糸 2nd album 『ゆるみの哲学』XFD",
       "videoId": "ogzF52YSL5k",
       "publishedAt": "2026-04-08T11:00:06Z"
     },
