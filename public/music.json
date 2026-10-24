@@ -1,6 +1,12 @@
 {
-  "createDate": "2026-10-23T04:00:51.756Z",
+  "createDate": "2026-10-24T03:55:18.119Z",
   "videos": [
+    {
+      "channelKey": "mayui",
+      "title": "\"ゆるみのひととき\" Party movie × 水星-tofubeats Covered by 繭糸",
+      "videoId": "aHDZ-8vNbiQ",
+      "publishedAt": "2026-10-23T11:00:24Z"
+    },
     {
       "channelKey": "mayui",
       "title": "【2部/START17:30】繭糸1st Acoustic One-man Live #むしのしらべ",
@@ -12,12 +18,6 @@
       "title": "【1部/START13:30】繭糸1st Acoustic One-man Live #むしのしらべ",
       "videoId": "xpjiw8J1aVg",
       "publishedAt": "2026-10-21T17:28:55Z"
-    },
-    {
-      "channelKey": "mayui",
-      "title": "\"ゆるみのひととき\" Party movie × 水星-tofubeats Covered by 繭糸",
-      "videoId": "aHDZ-8vNbiQ",
-      "publishedAt": "2026-10-21T16:34:35Z"
     },
     {
       "channelKey": "mayui",
@@ -1500,6 +1500,18 @@
       "title": "いれない - 是 / みちとせ (cover)",
       "videoId": "40rFgvv55T4",
       "publishedAt": "2023-09-16T12:00:03Z"
+    },
+    {
+      "channelKey": "soreyue",
+      "title": "#m3秋2026 『ユーエンミーⅡ』Tr.03『afterglow』 #shorts",
+      "videoId": "xUthKP93aEw",
+      "publishedAt": "2026-10-23T12:00:01Z"
+    },
+    {
+      "channelKey": "soreyue",
+      "title": "#m3秋2026 『ユーエンミーⅡ』Tr.02『MAKE UP』 #shorts",
+      "videoId": "-EvtfyOMZNo",
+      "publishedAt": "2026-10-23T09:00:16Z"
     },
     {
       "channelKey": "soreyue",
