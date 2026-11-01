@@ -1,5 +1,5 @@
 {
-  "createDate": "2026-10-31T04:47:14.340Z",
+  "createDate": "2026-11-01T05:10:42.000Z",
   "videos": [
     {
       "channelKey": "mayui",
@@ -1503,6 +1503,12 @@
     },
     {
       "channelKey": "soreyue",
+      "title": "【MV】わたしGhost / それ故",
+      "videoId": "w5OYrZ-kBYk",
+      "publishedAt": "2026-10-31T11:00:10Z"
+    },
+    {
+      "channelKey": "soreyue",
       "title": "#m3秋2026 『ユーエンミーⅡ』Tr.06『スクールガールズラブ』 #shorts",
       "videoId": "1j7Xhl5atn8",
       "publishedAt": "2026-10-24T10:00:05Z"
@@ -1536,12 +1542,6 @@
       "title": "#m3秋2026 『ユーエンミーⅡ』Tr.01『パラレLuna』 #shorts",
       "videoId": "55vMDCFD-7E",
       "publishedAt": "2026-10-22T11:00:17Z"
-    },
-    {
-      "channelKey": "soreyue",
-      "title": "【MV】わたしGhost / それ故",
-      "videoId": "w5OYrZ-kBYk",
-      "publishedAt": "2026-10-18T07:38:54Z"
     },
     {
       "channelKey": "soreyue",
