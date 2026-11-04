@@ -1,6 +1,12 @@
 {
-  "createDate": "2026-11-03T05:55:10.651Z",
+  "createDate": "2026-11-04T05:31:19.136Z",
   "videos": [
+    {
+      "channelKey": "mayui",
+      "title": "【～11/10 23:59】リードディフューザー『silky popの香り』受注販売",
+      "videoId": "hGmoVbnv2Yc",
+      "publishedAt": "2026-11-04T03:30:01Z"
+    },
     {
       "channelKey": "mayui",
       "title": "\"ゆるみのひととき\" Party movie × 水星-tofubeats Covered by 繭糸",
@@ -1500,6 +1506,12 @@
       "title": "いれない - 是 / みちとせ (cover)",
       "videoId": "40rFgvv55T4",
       "publishedAt": "2023-09-16T12:00:03Z"
+    },
+    {
+      "channelKey": "soreyue",
+      "title": "わたしGhost / それ故 #shorts  #それが故に",
+      "videoId": "7-ojqeh3lE4",
+      "publishedAt": "2026-11-03T09:00:28Z"
     },
     {
       "channelKey": "soreyue",
