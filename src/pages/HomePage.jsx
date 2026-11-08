@@ -17,8 +17,6 @@ import {
   isShortVideo,
   loadMusicLibrary,
   parseSharedPickIds,
-  parseSharedPickLabels,
-  parseSharedPickTitle,
   pickRecommendations,
   sortVideosNewestFirst,
 } from '../lib/music.js'
@@ -43,10 +41,8 @@ export default function HomePage() {
   const [activeTab, setActiveTab] = useState('home')
   const [selectedVideoIds, setSelectedVideoIds] = useState(initialSharedPickIds)
   const [selectionMode, setSelectionMode] = useState(initialSharedPickIds.length > 0)
-  const [pickTitle, setPickTitle] = useState(() => parseSharedPickTitle(window.location.search))
-  const [customPickTitles, setCustomPickTitles] = useState(() => (
-    parseSharedPickLabels(window.location.search)
-  ))
+  const [pickTitle, setPickTitle] = useState(DEFAULT_PICK_TITLE)
+  const [customPickTitles, setCustomPickTitles] = useState({})
   const [pickNotice, setPickNotice] = useState('')
 
   useEffect(() => {
@@ -82,13 +78,6 @@ export default function HomePage() {
         setAllVideos(library.videos)
         setSelectedVideoIds(validSharedPickIds)
         setSelectionMode(validSharedPickIds.length > 0)
-        setPickTitle(parseSharedPickTitle(window.location.search))
-        setCustomPickTitles(
-          Object.fromEntries(
-            Object.entries(parseSharedPickLabels(window.location.search))
-              .filter(([videoId]) => validSharedPickIds.includes(videoId)),
-          ),
-        )
         setCreateDate(library.createDate)
         setRecommendations(pickRecommendations(eligibleVideos, livers))
       } catch (error) {
@@ -199,12 +188,7 @@ export default function HomePage() {
   }
 
   function updateSharedUrl() {
-    const shareUrl = createSharedPickUrl(
-      window.location.href,
-      selectedVideoIds,
-      pickTitle,
-      customPickTitles,
-    )
+    const shareUrl = createSharedPickUrl(window.location.href, selectedVideoIds)
     const url = new URL(shareUrl)
 
     window.history.replaceState(null, '', `${url.pathname}${url.search}`)
