@@ -23,8 +23,7 @@ VTuber ユニット「myme（マイミー）」の音楽動画を、
 
 ## 技術構成
 
-- Svelte
-- Routify（ディレクトリ／ファイルベースルーティング）
+- React
 - Vite
 - HTML / CSS
 
@@ -74,7 +73,7 @@ Vite が表示するローカル URL にアクセスすると表示されます�
 pnpm run build
 ```
 
-ページは `src/routes/` 以下に作成します。ディレクトリ名とファイル構成が URL に対応します。
+ページは `src/pages/` 以下に作成し、`src/App.jsx` で URL と対応付けます。
 
 ---
 

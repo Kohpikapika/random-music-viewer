@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
-import { svelte } from '@sveltejs/vite-plugin-svelte'
-import routify from '@roxi/routify/vite-plugin'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  plugins: [routify(), svelte()],
+  plugins: [react()],
 })
