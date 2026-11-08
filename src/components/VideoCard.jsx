@@ -9,7 +9,7 @@ export default function VideoCard({ video, liver, featured = false }) {
 
   return (
     <article
-      className={`video-card${featured ? ' featured' : ''}`}
+      className={`video-card${featured ? ' featured' : ''}${liver.isGroup ? ' group-channel' : ''}`}
       style={{ '--liver-color': liver.color, '--liver-tint': liver.tint }}
     >
       <a

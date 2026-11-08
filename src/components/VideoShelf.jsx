@@ -11,7 +11,7 @@ export default function VideoShelf({
 }) {
   return (
     <section
-      className="video-shelf"
+      className={`video-shelf${liver.isGroup ? ' group-channel' : ''}`}
       id={liver.key}
       style={{ '--liver-color': liver.color, '--liver-tint': liver.tint }}
     >

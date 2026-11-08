@@ -62,6 +62,16 @@ export function isShortVideo(video) {
   return /#shorts/i.test(video.title ?? '')
 }
 
+export function isMymeRadioArchive(video) {
+  const title = video.title ?? ''
+
+  return (
+    video.channelKey === 'myme' &&
+    (/#いちゆる/i.test(title) || /^#\d+\s/.test(title)) &&
+    !isShortVideo(video)
+  )
+}
+
 export function filterGroupedVideos(groupedVideos, livers, predicate) {
   return Object.fromEntries(
     livers.map(({ key }) => [key, (groupedVideos[key] ?? []).filter(predicate)]),

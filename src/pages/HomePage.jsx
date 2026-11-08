@@ -4,11 +4,12 @@ import SiteFooter from '../components/SiteFooter.jsx'
 import SiteHeader from '../components/SiteHeader.jsx'
 import VideoCard from '../components/VideoCard.jsx'
 import VideoShelf from '../components/VideoShelf.jsx'
-import { livers, liverByKey } from '../lib/livers.js'
+import { livers, liverByKey, mymeChannel } from '../lib/livers.js'
 import {
   filterGroupedVideos,
   groupVideosByLiver,
   interleaveVideos,
+  isMymeRadioArchive,
   isShortVideo,
   loadMusicLibrary,
   pickRecommendations,
@@ -19,6 +20,7 @@ const createEmptyGroupedVideos = () => Object.fromEntries(livers.map(({ key }) =
 
 export default function HomePage() {
   const [groupedVideos, setGroupedVideos] = useState(createEmptyGroupedVideos)
+  const [mymeVideos, setMymeVideos] = useState([])
   const [recommendations, setRecommendations] = useState([])
   const [createDate, setCreateDate] = useState('')
   const [loading, setLoading] = useState(true)
@@ -35,6 +37,9 @@ export default function HomePage() {
       try {
         const library = await loadMusicLibrary()
         const nextGroupedVideos = groupVideosByLiver(library.videos, livers)
+        const nextMymeVideos = library.videos.filter(
+          (video) => video.channelKey === mymeChannel.key && !isShortVideo(video),
+        )
 
         if (cancelled) {
           return
@@ -47,6 +52,7 @@ export default function HomePage() {
         )
 
         setGroupedVideos(nextGroupedVideos)
+        setMymeVideos(nextMymeVideos)
         setCreateDate(library.createDate)
         setRecommendations(pickRecommendations(eligibleVideos, livers))
         setRandomVideosByLiver(
@@ -85,6 +91,14 @@ export default function HomePage() {
   const interleavedRecommendations = useMemo(
     () => interleaveVideos(regularVideos, livers),
     [regularVideos],
+  )
+  const mymeMusicVideos = useMemo(
+    () => mymeVideos.filter((video) => !isMymeRadioArchive(video)),
+    [mymeVideos],
+  )
+  const mymeRadioArchives = useMemo(
+    () => mymeVideos.filter(isMymeRadioArchive),
+    [mymeVideos],
   )
   const formattedCreateDate = createDate
     ? new Intl.DateTimeFormat('ja-JP', { dateStyle: 'long' }).format(new Date(createDate))
@@ -160,6 +174,23 @@ export default function HomePage() {
                   heading={`${liver.name}のショート`}
                 />
               ))}
+          </div>
+        ) : activeTab === mymeChannel.key ? (
+          <div className="content-section shelves myme-shelves">
+            <VideoShelf
+              liver={mymeChannel}
+              videos={mymeMusicVideos}
+              heading="mymeのオリジナル曲"
+              limit={mymeMusicVideos.length}
+              emptyMessage="オリジナル曲の追加を待っています。"
+            />
+            <VideoShelf
+              liver={mymeChannel}
+              videos={mymeRadioArchives}
+              heading="「一日、一ゆるみ。」アーカイブ"
+              limit={mymeRadioArchives.length}
+              emptyMessage="ラジオアーカイブの追加を待っています。"
+            />
           </div>
         ) : (
           <div className="content-section shelves single-shelf">

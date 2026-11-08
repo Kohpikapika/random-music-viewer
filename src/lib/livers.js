@@ -22,4 +22,14 @@ export const livers = [
   },
 ]
 
+// ユニット動画は3人の均等抽選には含めず、myme専用タブで扱う。
+export const mymeChannel = {
+  key: 'myme',
+  name: 'myme',
+  initial: 'M',
+  isGroup: true,
+  color: '#5f6368',
+  tint: '#f1f3f4',
+}
+
 export const liverByKey = Object.fromEntries(livers.map((liver) => [liver.key, liver]))

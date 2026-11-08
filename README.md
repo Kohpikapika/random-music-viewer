@@ -14,6 +14,7 @@ VTuber ユニット「myme（マイミー）」の音楽動画を、
 - 繭糸、みちとせ、それ故の各チャンネルから 1 曲ずつランダム表示
 - メンバーごとの動画一覧をチャンネルページ風に表示
 - ホーム、動画、ショート、各メンバーのタブで表示内容を切り替え
+- mymeタブでは、ユニットのオリジナル曲と`#いちゆる`のラジオアーカイブを分けて表示
 - 動画タブからショートを除外し、ショートはタイトルの `#shorts` を大文字・小文字を区別せずに判定
 - サムネイルから YouTube の動画ページへ移動
 - ボタンを押すと組み合わせを引き直し
@@ -125,7 +126,7 @@ node scripts/import-manual-playlist.js
 node scripts/import-manual-playlist.js --playlist "別のプレイリストURL" --channel-key michitose
 ```
 
-指定できる既存の`channelKey`は`mayui`、`michitose`、`soreyue`です。空の場合は`channelKey: ""`として保存されるため、表示に使用する前に手動で設定してください。別のキーを使う場合は、Viewer側の表示定義も先に追加してください。
+指定できる既存の`channelKey`は`mayui`、`michitose`、`soreyue`、`myme`です。空の場合は`channelKey: ""`として保存されるため、表示に使用する前に手動で設定してください。別のキーを使う場合は、Viewer側の表示定義も先に追加してください。
 
 スクリプトが取得して保存する項目は次の4つです。
 

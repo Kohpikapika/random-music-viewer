@@ -1,9 +1,11 @@
-import { livers } from '../lib/livers.js'
+import { livers, mymeChannel } from '../lib/livers.js'
 
 const tabs = [
   { id: 'home', label: 'ホーム' },
   { id: 'recommendations', label: '動画' },
   { id: 'shorts', label: 'ショート' },
+  // mymeはメンバー固有色を持たないため、ホームやショートと同じ3色下線を使う。
+  { id: mymeChannel.key, label: mymeChannel.name },
   ...livers.map((liver) => ({ id: liver.key, label: liver.name, color: liver.color })),
 ]
 
