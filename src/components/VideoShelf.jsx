@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import VideoCard from './VideoCard.jsx'
 
 export default function VideoShelf({
@@ -5,10 +6,23 @@ export default function VideoShelf({
   videos = [],
   heading = '',
   limit = 8,
+  loadMoreStep = 0,
+  loadMoreLabel = 'もっと見る',
   emptyMessage = '動画の追加を待っています。',
-  redrawLabel = '',
-  onRedraw,
+  selectedVideoIds = [],
+  selectionLimitReached = false,
+  canSelectVideo,
+  onToggleSelection,
 }) {
+  const [visibleCount, setVisibleCount] = useState(limit)
+
+  useEffect(() => {
+    setVisibleCount(limit)
+  }, [limit, videos])
+
+  const displayedVideos = videos.slice(0, visibleCount)
+  const canLoadMore = loadMoreStep > 0 && visibleCount < videos.length
+
   return (
     <section
       className={`video-shelf${liver.isGroup ? ' group-channel' : ''}`}
@@ -18,19 +32,38 @@ export default function VideoShelf({
       <div className="section-heading">
         <span className="section-avatar" aria-hidden="true">{liver.initial}</span>
         <h2>{heading || `${liver.name}の動画`}</h2>
-        {redrawLabel && (
-          <button className="shelf-redraw" type="button" onClick={onRedraw}>
-            <span aria-hidden="true">↻</span> {redrawLabel}
-          </button>
-        )}
       </div>
 
       {videos.length ? (
-        <div className="video-grid">
-          {videos.slice(0, limit).map((video) => (
-            <VideoCard key={video.videoId} video={video} liver={liver} />
-          ))}
-        </div>
+        <>
+          <div className="video-grid">
+            {displayedVideos.map((video) => {
+              const isSelectable = canSelectVideo?.(video) ?? false
+
+              return (
+                <VideoCard
+                  key={video.videoId}
+                  video={video}
+                  liver={liver}
+                  selected={selectedVideoIds.includes(video.videoId)}
+                  selectionOrder={selectedVideoIds.indexOf(video.videoId) + 1}
+                  selectionDisabled={selectionLimitReached}
+                  onToggleSelection={isSelectable ? onToggleSelection : undefined}
+                />
+              )
+            })}
+          </div>
+          {canLoadMore && (
+            <button
+              className="shelf-load-more"
+              type="button"
+              onClick={() => setVisibleCount((count) => count + loadMoreStep)}
+            >
+              {loadMoreLabel}
+              <span aria-hidden="true">↓</span>
+            </button>
+          )}
+        </>
       ) : (
         <p className="empty-state">{emptyMessage}</p>
       )}

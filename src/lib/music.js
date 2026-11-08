@@ -59,7 +59,7 @@ export function pickRecommendations(groupedVideos, livers, limitPerLiver = 2) {
 }
 
 export function isShortVideo(video) {
-  return /#shorts/i.test(video.title ?? '')
+  return /#\s*shorts/i.test(video.title ?? '')
 }
 
 export function isMymeRadioArchive(video) {
@@ -72,10 +72,78 @@ export function isMymeRadioArchive(video) {
   )
 }
 
+export const DEFAULT_PICK_TITLE = 'お気に入りのmyme 3曲'
+
+export function parseSharedPickIds(search = '') {
+  const picks = new URLSearchParams(search).get('picks') ?? ''
+
+  return [...new Set(picks.split(',').filter((videoId) => /^[\w-]{11}$/.test(videoId)))].slice(0, 3)
+}
+
+export function parseSharedPickTitle(search = '') {
+  const title = new URLSearchParams(search).get('title')?.trim() ?? ''
+  return title ? title.slice(0, 32) : DEFAULT_PICK_TITLE
+}
+
+export function parseSharedPickLabels(search = '') {
+  const encodedLabels = new URLSearchParams(search).get('labels')
+
+  if (!encodedLabels) {
+    return {}
+  }
+
+  try {
+    const labels = JSON.parse(encodedLabels)
+
+    return Object.fromEntries(
+      Object.entries(labels).filter(([videoId, label]) => (
+        /^[\w-]{11}$/.test(videoId) && typeof label === 'string'
+      )).map(([videoId, label]) => [videoId, label.slice(0, 70)]),
+    )
+  } catch {
+    return {}
+  }
+}
+
+export function createSharedPickUrl(
+  currentUrl,
+  videoIds,
+  title = DEFAULT_PICK_TITLE,
+  labels = {},
+) {
+  const url = new URL(currentUrl)
+  url.search = ''
+  url.hash = ''
+  url.searchParams.set('picks', videoIds.slice(0, 3).join(','))
+  if (title.trim() && title.trim() !== DEFAULT_PICK_TITLE) {
+    url.searchParams.set('title', title.trim().slice(0, 32))
+  }
+
+  const selectedLabels = Object.fromEntries(
+    videoIds
+      .filter((videoId) => Object.hasOwn(labels, videoId))
+      .map((videoId) => [videoId, labels[videoId].slice(0, 70)]),
+  )
+  if (Object.keys(selectedLabels).length) {
+    url.searchParams.set('labels', JSON.stringify(selectedLabels))
+  }
+
+  return url.toString()
+}
+
 export function filterGroupedVideos(groupedVideos, livers, predicate) {
   return Object.fromEntries(
     livers.map(({ key }) => [key, (groupedVideos[key] ?? []).filter(predicate)]),
   )
+}
+
+export function sortVideosNewestFirst(videos = []) {
+  return [...videos].sort((firstVideo, secondVideo) => {
+    const firstPublishedAt = Date.parse(firstVideo.publishedAt ?? '') || 0
+    const secondPublishedAt = Date.parse(secondVideo.publishedAt ?? '') || 0
+
+    return secondPublishedAt - firstPublishedAt
+  })
 }
 
 export function interleaveVideos(groupedVideos, livers, limitPerLiver = 8) {
