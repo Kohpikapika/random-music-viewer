@@ -42,12 +42,15 @@ VTuber ユニット「myme（マイミー）」の音楽動画を、
 表示に使用している `music.json` は、
 別リポジトリのスクリプトによって **定期的に自動生成・更新**されています。
 
-- GitHub Actions により毎日自動実行
-- 最新の動画情報を取得して JSON を更新
-- 更新後はこの viewer に反映され、自動で再デプロイされます
+- FetcherリポジトリのGitHub Actionsを毎日定期実行、または手動実行
+- Fetcherで最新の動画情報を取得し、`music.json`を生成・検証
+- Workflowからこのリポジトリの`public/music.json`へcommit/push
+- Viewer側の更新を契機に本番を再デプロイ
 
 このアプリ自体はデータ取得処理を持たず、  
 **「生成されたデータを表示するだけ」**の役割に徹しています。
+
+したがって、自動生成される`public/music.json`をViewer側で直接修正して更新する運用は行いません。取得内容の修正や手動更新はFetcher側で行い、最新`main`のWorkflowを`Run workflow`から新規実行して反映します。過去のWorkflowに対する`Re-run jobs`は古いコミットを再利用するため、最新処理による更新には使用しません。
 
 手動追加用の`music.manual.json`も読み込みます。両方のJSONに同じ`videoId`がある場合は、自動生成された`music.json`の内容を優先し、重複表示しません。
 
