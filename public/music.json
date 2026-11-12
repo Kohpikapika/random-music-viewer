@@ -1,5 +1,5 @@
 {
-  "createDate": "2026-11-09T13:39:44.710Z",
+  "createDate": "2026-11-12T06:29:09.545Z",
   "videos": [
     {
       "channelKey": "mayui",
@@ -1533,6 +1533,12 @@
     },
     {
       "channelKey": "soreyue",
+      "title": "【MV】スクールガールズラブ / それ故 × 日南めい",
+      "videoId": "XzITnNjF77k",
+      "publishedAt": "2026-11-03T04:25:01Z"
+    },
+    {
+      "channelKey": "soreyue",
       "title": "【MV】わたしGhost / それ故",
       "videoId": "w5OYrZ-kBYk",
       "publishedAt": "2026-10-31T11:00:10Z"
@@ -2004,6 +2010,12 @@
       "title": "ブーゲンビリア(香椎モイミ)/covered by それ故",
       "videoId": "_88KUOUuU8g",
       "publishedAt": "2020-11-29T11:00:07Z"
+    },
+    {
+      "channelKey": "myme",
+      "title": "#27 半年記念！3Dでうごく、ゆるみ。 #いちゆる",
+      "videoId": "bQ0TUk4edQI",
+      "publishedAt": "2026-11-10T15:00:16Z"
     },
     {
       "channelKey": "myme",
