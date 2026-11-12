@@ -182,12 +182,6 @@ main { min-height: 70vh; }
 .pick-preview footer span { color: #777; font-size: .75em; font-weight: 700; letter-spacing: .08em; }
 .pick-preview footer b:last-child { margin-left: auto; }
 
-.pick-progress { position: fixed; right: 18px; bottom: 18px; z-index: 30; display: flex; gap: 18px; align-items: center; padding: 12px 14px; border-radius: 14px; color: #fff; background: rgba(15,15,15,.95); box-shadow: 0 12px 36px rgba(0,0,0,.26); backdrop-filter: blur(12px); }
-.pick-progress div { display: grid; }
-.pick-progress span { color: #aaa; font-size: 8px; font-weight: 900; letter-spacing: .12em; }
-.pick-progress strong { font-size: 13px; }
-.pick-progress button { padding: 8px 11px; border: 0; border-radius: 999px; color: #111; background: #fff; cursor: pointer; font-size: 10px; font-weight: 800; white-space: nowrap; }
-
 .shelves { padding-block: 6px 50px; }
 .video-shelf { padding-block: 42px 54px; }
 .video-shelf + .video-shelf { margin-top: 22px; }
@@ -257,7 +251,6 @@ main { min-height: 70vh; }
   .pick-entry button { width: 100%; }
   .pick-builder { gap: 26px; padding: 24px 16px; border-radius: 16px; }
   .pick-preview { border-radius: 12px; }
-  .pick-progress { right: 8px; bottom: 8px; left: 8px; justify-content: space-between; }
   .info-page { width: min(calc(100% - 24px), 920px); padding-top: 20px; }
   .info-hero { margin-bottom: 42px; padding: 32px 24px 76px; border-radius: 18px; }
   .info-hero::after { width: 130px; height: 130px; right: -30px; top: auto; bottom: -60px; box-shadow: -70px 78px 0 var(--green), 48px 88px 0 var(--blue); }

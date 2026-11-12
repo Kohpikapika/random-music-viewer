@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import ChannelHero from '../components/ChannelHero.jsx'
 import PickBuilder from '../components/PickBuilder.jsx'
-import PickProgress from '../components/PickProgress.jsx'
 import SiteFooter from '../components/SiteFooter.jsx'
 import SiteHeader from '../components/SiteHeader.jsx'
 import VideoCard from '../components/VideoCard.jsx'
@@ -390,9 +389,6 @@ export default function HomePage() {
           </div>
         )}
       </main>
-      {selectionMode && selectedVideos.length > 0 && (
-        <PickProgress count={selectedVideos.length} onShowPreview={showPickBuilder} />
-      )}
       <SiteFooter />
     </div>
   )
